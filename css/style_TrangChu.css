@@ -1,0 +1,344 @@
+@font-face {
+  font-family: 'ChuMup';
+  src: url('font/BeVietnamPro-Regular.ttf');
+}
+body {
+  font-family: 'ChuMup', sans-serif;
+}
+.none {height: 45px;}
+
+/* Header */
+.logoheader {
+  width: 70px;
+  height: 70px; 
+  margin-bottom: 30px;
+  margin-left: 50px;
+  }
+.header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+/* Menu */
+.menu {
+  position: relative;
+  right: 100px;
+  top: 40px;
+ 
+} 
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+ .menu ul>li {
+  padding:  10px 20px 30px 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.menu ul>li>a {
+  text-decoration: none;
+  color: rgb(130, 126, 126);
+  position: relative;
+  transition: all 0.5s ease;
+}
+.menu ul>li>a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background: rgb(255, 0, 0);
+  transition: width 0.5s ease, left 0.5s ease;
+}
+.menu ul>li:hover a {
+  color: rgb(246, 71, 71);
+} 
+.menu ul>li:hover>a::after {
+  width: 100%;
+  left: 0;
+}
+/* Icon header */
+.ico {
+  width: 25px;
+  height: 25px;
+}
+.icon ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+.icon ul>li {
+  padding-top: 10px;
+  padding-left: 30px;
+    
+}
+.icon a{
+  padding: 3px 3px 3px 3px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: 20px ;
+  display: inline-block;
+  border: 1px solid rgb(146, 144, 144);
+  border-radius: 40%;
+  box-shadow: 1px 2px 3px 3px rgba(202, 202, 202, 0.6);
+}
+.icon a:hover::after {
+  content: attr(title);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -35px;
+  white-space: nowrap;
+  z-index: 1;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Banner */
+/*slide-show*/
+.slideshow {
+  position: relative;
+  height: 480px; /* đặt chiều cao cho container của slideshow */
+}
+
+.slideshow img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; /* ẩn đi các ảnh bằng cách giảm độ mờ */
+  transition: opacity 0.5s ease-in-out; /* tạo hiệu ứng chuyển đổi độ mờ */
+}
+.slideshow img.active {
+  opacity: 1; /* hiển thị ảnh hiện tại */
+}
+/*MUC LUC */
+.mucluc {position: relative; right: 10px; text-align: center;}
+.mucluc ul>li{
+  padding: 40px 50px 40px 15px;
+  border-radius: 20px;
+  list-style: none; 
+  float: left; 
+  font-weight: bold;
+  font-size:  17px;
+  background-color: rgb(255, 217, 255);}
+.mucluc ul>li>a{text-decoration: none; color: rgb(246, 71, 71);}
+.mucluc ul:hover li{text-decoration: none; color: rgb(255, 255, 255); background-color:  rgb(247, 31, 31);}
+.mucluc ul>li:hover a{text-decoration: none; color: rgb(255, 255, 255);}
+
+/* Danh muc */
+.tieude1 h3{
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  color: rgb(246, 71, 71) ;
+}
+.ruler {
+  margin-top: 20px;
+  padding: 2px;
+  background-color: rgb(246, 71, 71);
+}
+/*Danh muc sp */
+/* Banner_thucdonyeuthich */
+.thucdon{
+  padding: 10px;
+  margin: 10px;
+}
+.thucdon img{
+  border: 1px solid rgb(215, 215, 215);
+  width: 100%;
+}
+.thucdon img {
+  border: 1px solid rgb(215, 215, 215);
+  width: 100%;
+  transition: transform .2s; 
+}
+
+.thucdon img:hover {
+  transform: scale(1.1);
+}
+.chitiet{
+  padding: 10px 20px;
+  border: 1px solid rgb(215, 215, 215);
+}
+.chitiet h5{
+  font-weight: bold;
+}
+.chitiet p{
+  flex: 18px;
+  
+}
+.chitiet span{
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+  /*SP thucdon_Hieu ung chuyen dong */
+.add-to-cart-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity .2s;
+}
+.thucdon:hover .add-to-cart-btn {
+  opacity: 1;
+}
+/*SP_thucdon Button buy */
+.buy-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buy-button:hover {
+  background-color: #d00;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+  transform: translateY(-5px);
+}
+
+
+/* News */
+.news h6{padding: 0px 0px 0px 40px}
+.news p{padding: 0px 0px 0px 40px}
+
+.news ul{
+  margin-top: -20px;
+  margin-left: 10px;
+}
+.news ul>li{list-style-type: none; text-align: center;}
+.news ul>li>a{text-decoration: none;font-weight: bold; color: rgb(255, 106, 106);}
+.news ul>li:hover a{color:rgb(244, 118, 118);}
+.news ul {
+  display: none;
+  transition: display 0.3s ease;
+}
+.news:hover ul {
+  display: block;
+  }
+.news ul>li:hover a{
+    color: #ff0000;
+}
+.news:hover {
+  transform: scale(1.1);
+}
+
+/*Tin cũ hơn button */
+.oldnew {
+margin: 100px 40px 40px 100px;  
+width: 100px;
+height: 40px;
+background-color: #ff4646;
+color: rgb(255, 255, 255);
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.oldnew:hover {background-color: rgb(222, 66, 66);color: white;}
+
+
+/* Footer */
+.nenfluid {
+  width: 100%;
+  height: 300px;
+  background-color: rgb(255, 217, 255);
+}
+
+.logof {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  left: 150px;
+}
+/* Footer_1 */
+.footer1 {
+  padding: 50px;
+}
+
+.footer1 h5{
+  padding-top: 20px ;
+  font-weight: bold;
+}
+.email-input {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.send-button {
+  width: 100px;
+  height: 40px;
+  background-color: #ff4646;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.send-button:hover {background-color: white;color: red;}
+/* Footer_2 */
+.footer2 {
+  padding: 30px 0px 10px 0px;
+}
+
+.footer2 h5{
+  padding-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.footer2 ul>li>a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+
+}
+.footer2 ul>li:hover a{color:rgb(254, 115, 115);}
+
+.iconf {
+  width: 40px; height: 40px;
+}
+.social-media-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.social-media-icon p{
+  font-size: 20px;
+  margin-left: 10px;
+
+}
+/* Powered by */
+.nenfluid2 {
+  height: 100%; background-color: rgb(255, 170, 255);
+}
+.nenfluid2 p{text-align: center; padding-top: 10px;}

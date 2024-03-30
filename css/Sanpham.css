@@ -1,0 +1,77 @@
+.sanpham{
+    text-align: center;
+   padding:10px
+}
+.sanpham img{
+    border-radius: 10px;
+    width: 100px;
+    height: 80px;
+  
+}
+.sanpham h5{
+    font-size:  15px;
+}
+
+.none{
+    height: 45px;
+}
+/* San pham ban chay */
+.goi {
+    font-size: 22px;
+    margin-right: 50px;
+}
+.ruot {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 1px 1px rgb(196, 196, 196, 0.5);
+    display: inline-block;    
+    overflow: hidden;
+
+}
+.ruot img {
+    padding: auto;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+.ruot h4{
+    padding-left: 10px;
+    color: rgb(255, 31, 31);
+}
+.ruot h4>b{
+    text-decoration: underline;
+}
+.ruot h5{
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.ruot p{
+    padding-left: 10px;
+    font-size: 16px;
+}
+.ruot span{
+    text-decoration: line-through; padding-left: 10px; font-size: 18px; color: rgb(88, 88, 88);
+}
+.ruot img:hover {
+    transform: scale(1.1);
+}
+
+/* Nut mua */
+.button {
+    font-size: 16px;
+    padding: 5px 20px;
+    margin: 10px 0 10px 90px;
+    color: white;
+    background-color: #ff0033;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #cc0022;
+}
