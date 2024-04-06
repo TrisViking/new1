@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'ChuMup';
+  font-family: 'font1';
   src: url('font/BeVietnamPro-Regular.ttf');
 }
 body {
-  font-family: 'ChuMup', sans-serif;
+  font-family: 'font1', sans-serif;
 }
 .none {height: 45px;}
 
@@ -23,7 +23,7 @@ body {
   width: 100%;
   z-index: 100;
 }
-/* Menu */
+/* Menu header */
 .menu {
   position: relative;
   right: 100px;
@@ -38,7 +38,7 @@ body {
   height: 80px;
 }
  .menu ul>li {
-  padding:  10px 20px 30px 20px;
+  padding:  10px 20px 40px 20px;
   font-weight: bold;
   font-size: 20px;
 }
@@ -128,7 +128,7 @@ body {
 .slideshow img.active {
   opacity: 1; /* hiển thị ảnh hiện tại */
 }
-/*MUC LUC */
+/*Mục Lục */
 .mucluc {position: relative; right: 10px; text-align: center;}
 .mucluc ul>li{
   padding: 40px 50px 40px 15px;
@@ -142,7 +142,7 @@ body {
 .mucluc ul:hover li{text-decoration: none; color: rgb(255, 255, 255); background-color:  rgb(247, 31, 31);}
 .mucluc ul>li:hover a{text-decoration: none; color: rgb(255, 255, 255);}
 
-/* Danh muc */
+/* Danh Mục */
 .tieude1 h3{
   font-weight: bold;
   color: black;
@@ -154,7 +154,7 @@ body {
   padding: 2px;
   background-color: rgb(246, 71, 71);
 }
-/*Danh muc sp */
+/*Danh muc sản phẩm */
 /* Banner_thucdonyeuthich */
 .thucdon{
   padding: 10px;
@@ -201,7 +201,7 @@ body {
   border: none;
   font-size: 14px;
   opacity: 0;
-  transition: opacity .2s;
+  transition: opacity 1.2s;
 }
 .thucdon:hover .add-to-cart-btn {
   opacity: 1;

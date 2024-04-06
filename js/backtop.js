@@ -1,19 +1,17 @@
-// Get the button:
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+// Lấy tham chiếu đến nút:
+let mybutton = document.getElementById("myBtn"); 
+// Khi người dùng cuộn trang xuống 1200px từ đầu trang, hiển thị nút
+window.onscroll = function() {scrollFunction()};/* Sự kiện onscroll được gắn với cửa sổ trang web. Khi người dùng cuộn trang xuống, hàm scrollFunction sẽ được gọi. */
 
 function scrollFunction() {
-  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1800) {
+  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1200) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
   }
 }
-
-// When the user clicks on the button, scroll to the top of the document
+// Khi người dùng nhấn vào nút, cuộn lên đầu trang
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
+  // Nút top sẽ ẩn đi
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

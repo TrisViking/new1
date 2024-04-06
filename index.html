@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="./css/backtop.css">
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> <!-- Add thư viện jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> <!-- Công cụ ajax -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!--  Thêm bootstrap v4 csdl -->
+    <!-- Bộ symbol -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     
     
@@ -23,38 +24,32 @@
     <div class="container">
         <div class="row header">
             <div class="col-sm-8">
+                <!-- Menu header -->
                 <div class="menu">
                     <ul>
                         <li><img src="img/lotteria_logo.ico" alt="" class="logoheader" alt=""></li>
                         <li><a href="index.html">Trang Chủ</a></li>
                         <li><a href="index_banchay.html">Bán Chạy</a></li>
                         <li><a href="index_sanpham.html">Thực Đơn</a></li>
-                        <li><a href="#">Vị Trí Cửa Hàng</a></li>
+                        <li><a href="index_cuahang.html">Vị Trí Cửa Hàng</a></li>
                     </ul>
                 </div>
             </div>
+            <!-- Icon header -->
             <div class="col-sm-4">
                 <div class="icon">
                   <ul>
                     <li>
-                      <a href="#" title="Vị trí">
-                        <img src="img/trangchu_vitri_1.ico" alt="Vị trí" class="ico">
-                      </a>
+                        <a href="#" title="Vị trí"><img src="img/trangchu_vitri_1.ico" alt="Vị trí" class="ico"></a>
                     </li>
                     <li>
-                      <a href="#" title="Cá nhân">
-                        <img src="img/trangchu_personal_1.ico" alt="Cá nhân" class="ico">
-                      </a>
+                      <a href="#" title="Cá nhân"><img src="img/trangchu_personal_1.ico" alt="Cá nhân" class="ico"></a> 
                     </li>
                     <li>
-                      <a href="#" title="Thông báo">
-                        <img src="img/trangchu_notification.ico" alt="Thông báo" class="ico">
-                      </a>
+                      <a href="#" title="Thông báo"><img src="img/trangchu_notification.ico" alt="Thông báo" class="ico"></a>
                     </li>
                     <li>
-                      <a href="#" title="Gio Hang">
-                        <img src="img/trangchu_packbag.ico" alt="Gio Hang" class="ico">
-                      </a>
+                      <a href="#" title="Gio Hang"> <img src="img/trangchu_packbag.ico" alt="Gio Hang" class="ico"></a>
                     </li>
                   </ul>
                 </div>
@@ -82,23 +77,22 @@
                     </div>
                 </div>
                 <div class="buttons">
-                    <button id="prev"><</button>
-                    <button id="next">></button>
+                    <button id="prev"><</button> <!-- Nút back ảnh -->
+                    <button id="next">></button> <!-- Nút next ảnh -->
                 </div>
-                <ul class="dots">
+                <ul class="dots"> <!-- Nút dot dùng để chuyển các ảnh -->
                     <li class="active"></li>
                     <li></li>
                     <li></li>
                 </ul>
         </div>
     </div>
-    <!--Khuyen mai -->
+    <!--Mục Lục -->
     <div class="none"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-3 mucluc">
                 <ul>
-                    
                     <li><a href="index_sanpham.html"><img src="img/icon_banchay.svg" alt="" style="width: 50px;height: 50px;">&nbspBÁN CHẠY</a></li>
                 </ul>
             </div>
@@ -119,7 +113,7 @@
             </div>
         </div>
     </div>
-    <!-- Danh muc -->
+    <!-- Danh Mục -->
     <div class="none"></div>
     <div class="container">
         <div class="row">
@@ -130,7 +124,7 @@
                 <div class="ruler"></div>
             </div>
         </div>  
-    <!-- SP thucdon -->
+    <!-- Danh mục sản phẩm -->
         <div class="row thucdon">
             <div class="col-lg-4 sp">
                 <img src="img/sp1.jpg" alt="">
@@ -139,7 +133,7 @@
                     <p>01 Grill Chicken</br>
                       01 Saghetti </p>
                     <span>55.000&nbspĐ</span> </br>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">Mua</button>
                 </div>
             </div>
             <div class="col-lg-4 sp">
@@ -149,7 +143,7 @@
                     <p>02 GÀ RÁN BASIC</br>
                       01 KHOAI TÂY CHIÊN </p>
                     <span>65.000&nbspĐ</span> </br>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">Mua</button>
                 </div>
             </div>
             <div class="col-lg-4 sp">
@@ -160,12 +154,12 @@
                       01 Saghetti
                     </p>
                     <span>75.000&nbspĐ</span> </br>
-                    <button class="buy-button">Buy Now</button>
+                    <button class="buy-button">Mua</button>
                 </div>
             </div>
         </div>
     </div>
-    <!-- New -->
+    <!-- News -->
     <div class="none"></div>
     <div class="none"></div>
     <div class="container">
@@ -283,7 +277,7 @@
     <div class="container-fluid nenfluid2">
         <div class="container" style="color: rgb(255, 18, 18);">
             <div class="row">
-                <div class="col-lg-10">
+                <div class="col-lg-12">
                     <p style="color: black; text-align: center;"> © 2024 Lotteria All CopyRight  by Trần Minh Trí </p>
                 </div>
             </div>
@@ -292,7 +286,7 @@
     </div>
 
 
-    <!-- Chat Box -->
+    <!-- CHAT BOX -->
     <button class="chatbot-toggler">
         <span class="material-symbols-rounded">mode_comment</span>
         <span class="material-symbols-outlined">close</span>
@@ -314,10 +308,10 @@
         </div>
       </div>
 
-      <!-- Top button -->
+      <!-- TOP BUTTON -->
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     
-    <!-- JS -->
+    <!-- JS add js file --> 
     <script src="js/slider.js"></script>
     <script src="js/chatbox.js"></script>
     <script src="js/backtop.js"></script>
